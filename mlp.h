@@ -7,7 +7,6 @@
 
 #include <stdint.h>
 #include <string>
-#include <vector>
 
 typedef uint8_t data_type_t;
 
