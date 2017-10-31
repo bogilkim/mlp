@@ -26,8 +26,7 @@ public:
 	void init_weights();
 	void load_weights();
 	void save_weights();
-    int  big_to_little_endian(int x);
-	uint8_t bin_to_dec(uint8_t x);
+    	int  big_to_little_endian(int x);
 	unsigned big_to_little_endian_unsigned(unsigned x);
 	void read_test_file();
 	void read_train_file();
@@ -41,15 +40,15 @@ public:
 	float drelu(float num);
 
 private:
-    std::string config_file_name;               // Configuration file name
-    std::string test_file_name;                 // Test file for inferencing
+    	std::string config_file_name;               // Configuration file name
+    	std::string test_file_name;                 // Test file for inferencing
 	std::string test_label_file_name;			// Test label file for inferencing check
-    std::string train_file_name;             	// Training data set
+    	std::string train_file_name;             	// Training data set
 	std::string train_label_file_name;			// Training data labels
-    std::string weight_file_name;               // Pre-trained weight file name
+    	std::string weight_file_name;               // Pre-trained weight file name
 
-    unsigned num_layers;                        // # of layers including I/O
-    unsigned image_width, image_length;         // # of data points in the width, length
+    	unsigned num_layers;                        // # of layers including I/O
+    	unsigned image_width, image_length;         // # of data points in the width, length
 
 	unsigned train_set_size, test_set_size;
 	unsigned *num_neurons_per_layer;
@@ -59,7 +58,7 @@ private:
 	float **neurons;
 	float **deltavalues;
 	float **theta;
-    uint8_t **test_set;
+    	uint8_t **test_set;
 	uint8_t **train_set;
 	float **weights;
 };
